@@ -510,6 +510,10 @@ section {
         display: block;
      }
 
+     .about-details-container{
+        margin: 0;
+     }
+
      .details-container ul li {
         font-size:medium;
     }
