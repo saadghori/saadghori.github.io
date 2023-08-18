@@ -434,6 +434,12 @@ section {
 
    .navopen {
     height: 70vh;
+    right: -100%;
+    position: absolute;
+   }
+
+   .navopen.active {
+    right: 0;
    }
 
 
@@ -448,9 +454,14 @@ section {
         font-size: 10px;
     }
 
-    .navopen li a.active,.navopen li a:hover {
-        background: none;
-        color: #7843e6;
+   .navopen li:hover {
+        background: #FF00FF;
+        transition: .2s ease;
+    }
+
+    .navopen li a:hover {
+        color: white;
+        text-decoration: none;
     }
 
     #check:checked ~ ul {
