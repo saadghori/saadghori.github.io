@@ -346,9 +346,6 @@ section {
 
 }
 
-#contact-form input[type="radio"] {
-    margin-right: 5px;
-}
 
 #contact-form #hourly-rate-container {
     display: flex;
@@ -371,6 +368,7 @@ section {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    font-family: sans-serif;
 }
 
 /* BREAKPOINTS */
@@ -434,6 +432,11 @@ section {
 
    }
 
+   .navopen {
+    height: 55vh;
+   }
+
+
    .navopen li { 
         display: block;
         margin: 50px 0;
@@ -454,6 +457,7 @@ section {
         right: 0;
         border-left: 2px solid #FF00FF;
         border-top: 2px solid #FF00FF;
+        border-bottom: 2px solid #FF00FF;
     }
 
     #home {
