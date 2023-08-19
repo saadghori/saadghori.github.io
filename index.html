@@ -1,3 +1,19 @@
+<!-- 
+    Name:       Saad Ghori
+    Student ID: 155972227
+    Course:     WEB222 
+    Section:    NAA
+    Instructor: Mark Meritt
+    Date:       18-08-2023
+
+    Academic Honesty:
+    I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+    No part of this assessment has been copied manually or electronically from any other source
+    (including web sites) except for the information supplied by the WEB222 instructors and / or
+    made available in this assessment for my use. I also declare that no part of this assignment has
+    been distributed to other students.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +22,17 @@
     <title>Saad's Portfolio</title>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./src/css/style.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Press+Start+2P&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- navbar -->
             <nav class="navmenu">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
@@ -29,6 +48,7 @@
                     <li><a href="#contact">Contact</a>
                     </li>
                 </ul>
+                <!-- logo -->
                 <div class="logo">
                     <img src="./src/assets/images/logo.png" alt="Logo">
                 </div>
@@ -36,6 +56,7 @@
         </header>
 
         <main>
+            <!-- Home -->
             <section class="home" id="home">
                 <div class="home-image">
                     <img id="home-img" src="./src/assets/images/profile.png" alt="Home Image">
@@ -52,6 +73,7 @@
                         </div>
                 </div>
             </section>
+            <!-- About -->
             <section class="about" id="about">
                 <h2 class="title">Ab<span>out</span></h2>
                 <div class="section-container">
@@ -80,6 +102,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Education -->
             <section class="education" id="education">
                 <h2 class="title"><span>Edu</span>cation</h2>
                 <div class="section-container">
@@ -97,6 +120,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Contact me -->
             <section class="contact" id="contact">
                 <h2 class="title">Contact <span>Me</span></h2>
                 <form id="contact-form" action="https://httpbin.org/post" method="POST">
@@ -127,6 +151,7 @@
                     <label for="postal-code">>postal Code:</label>
                     <input type="text" id="postal-code" name="postal-code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
                     <br>
+                    <!-- Radio -->
                     <label>>what is this about?</label><br>
                     <input type="radio" id="question" name="topic" value="Question" required>
                     <label for="question">>question</label>
@@ -144,21 +169,16 @@
                     <label for="message">>message:</label><br>
                     <textarea id="message" name="message" rows="6" required></textarea>
                     <br>
+                    <!-- Extra input field -->
                     <label for="subscribe">>subscribe to newsletter:</label>
                     <input type="checkbox" id="subscribe" name="subscribe" value="yes">
                     <br>
                     <input type="submit" value="submit">
                 </form>
             </section>
-
-
-
         </main>
     </div>
 
     <script src="./src/js/app.js"></script>
-
-
-
 </body>
 </html>
